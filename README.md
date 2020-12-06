@@ -15,23 +15,27 @@ SAGE
 There are many variations on the theme. One may be required to use a given
 number of words, to use only words of a given length (or not), to use the
 smallest numbers of words, etc.<ol class="enumerate" type=a><li class="li-enumerate">Using GiMPy, implement an algorithm for finding the shortest possible
-word ladder connecting two given words of the same length. You might find
+word ladder connecting two given words of the same length using only words
+of the same length as intermediates. You might find
 <div class="center">
 <span style="font-family:monospace">https://github.com/dwyl/english-words</span>
 </div>
-useful.</li><li class="li-enumerate">By generating random pairs of words, determine (i) a lower bound on the
-maximum size and (2) an estimate of the average size of a word ladder for
-words of different lengths. Can you find a pair of words of the same length
-for which there doesn&#X2019;t exist a word ladder? If running time is too long,
-you may limit your dictionary in some reasonable way, but only if absolutely
-necessary!</li><li class="li-enumerate">Make a graph of the length of time it takes to find a shortest word
+useful.</li><li class="li-enumerate">By generating random pairs of words of the same length, determine (i) a
+lower bound on the maximum size of a word ladder and (2) an estimate of the
+average size of a word ladder for pairs of words of different lengths. Can
+you find a pair of words of the same length for which there doesn&#X2019;t exist a
+word ladder? If running time is too long, you may limit your dictionary in
+some reasonable way.</li><li class="li-enumerate">Make a graph of the length of time it takes to find a shortest word
 ladder as a function of the length of the ladder.</li><li class="li-enumerate">Modify your algorithm to produce a word letter of a specified fixed
 length if one exists.</li></ol></li><li class="li-enumerate">A <span style="font-style:italic">d</span>-heap is a heap in which non-leaf nodes in the tree can
 have up to <span style="font-style:italic">d</span> children instead of just 2. <ol class="enumerate" type=a><li class="li-enumerate">Explain how to store a <span style="font-style:italic">d</span>-heap in an array.</li><li class="li-enumerate">What is the minimum height of a <span style="font-style:italic">d</span> heap of <span style="font-style:italic">n</span> elements in
 terms of <span style="font-style:italic">n</span> and <span style="font-style:italic">d</span>?</li><li class="li-enumerate">Analyze the running times of the basic heap operations in terms
-of <span style="font-style:italic">n</span> and <span style="font-style:italic">d</span>.</li></ol></li><li class="li-enumerate">Argue that the average depth of the tree in binary search is &#X398;(lg
-<span style="font-style:italic">n</span>). Hint: write a recursion for the average depth a tree of size <span style="font-style:italic">n</span> and
-solve it.</li><li class="li-enumerate">Suppose a list <span style="font-style:italic">A</span> contains only integers from 0 to 2<sup><span style="font-style:italic">i</span></sup> for some
+of <span style="font-style:italic">n</span> and <span style="font-style:italic">d</span>.</li></ol></li><li class="li-enumerate">Argue that the average search time in a randomly constructed binary
+search tree is &#X398;(lg<span style="font-style:italic">n</span>). Hint: write a recurrence for the average
+depth of a node in a randomly constructed tree of size <span style="font-style:italic">n</span>. The recurrence
+is based on the fact that when you search for a key, you either find it in
+the root node or you need to search either the left or the right subtrees,
+which are smaller, recursively.</li><li class="li-enumerate">Suppose a list <span style="font-style:italic">A</span> contains only integers from 0 to 2<sup><span style="font-style:italic">i</span></sup> for some
 given positive integer <span style="font-style:italic">i</span>. Explain how to do bissection search to find out
 if a given integer appears in the list using only bit operations. This
 method would be useful when <span style="font-style:italic">i</span> is very large and we cannot assume that the
